@@ -13,7 +13,7 @@ const Myorder = () => {
     axios
       .post(`http://localhost:7000/findbooking?email=${user.email}`)
       .then((res) => setdata(res.data));
-  }, [user, condition]);
+  }, [condition]);
 
   // delete order
   const orderdelete = (id) => {
@@ -24,9 +24,9 @@ const Myorder = () => {
           toast.success("Order Placed !", {
             position: toast.POSITION.TOP_CENTER,
           });
+          setcondition(!condition);
         }
       });
-      setcondition(!condition);
     }
   };
 

@@ -39,24 +39,16 @@
   padding: 9px 20px;
   margin-right: 10px;
   border: none;
-  background-color: rgb(40, 101, 139);
+  background-color: rgb(7, 146, 233);
   color: white;
   font-size: 15px;
   border-radius: 3px;
 }
-.mana-cancele-button {
-  padding: 9px 20px;
-  margin-right: 10px;
-  border: none;
-  background-color: rgb(153, 155, 48);
-  color: white;
-  font-size: 15px;
-  border-radius: 3px;
-}
+
 .mana-delete-button {
-  padding: 9px 20px;
+  padding: 9px 23px;
   border: none;
-  background-color: rgb(134, 50, 44);
+  background-color: rgb(216, 25, 11);
   color: white;
   font-size: 15px;
   border-radius: 3px;

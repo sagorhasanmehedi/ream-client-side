@@ -37,17 +37,13 @@ const Detailpage = () => {
     data.status = "pending";
     data.userINFO = userinformation;
 
-    axios
-      .put(`https://stormy-river-96202.herokuapp.com/confirmbook/${id}`, data)
-      .then((res) => {
-        if (res.data.modifiedCount > 0) {
-          toast.success("Order Placed !", {
-            position: toast.POSITION.TOP_CENTER,
-          });
-        }
-      });
-
-    console.log(data);
+    axios.put(`http://localhost:7000/confirmbook`, data).then((res) => {
+      if (res.data.acknowledged) {
+        toast.success("Order Placed !", {
+          position: toast.POSITION.TOP_CENTER,
+        });
+      }
+    });
 
     document.getElementById("namefild").value = "";
     document.getElementById("emailfild").value = "";
@@ -76,7 +72,7 @@ const Detailpage = () => {
             id="addresfild"
             onChange={handeladdres}
             type="text"
-            value=" Address..."
+            placeholder=" Address..."
           />
           <button onClick={handelsubmit} type="submit">
             {" "}

@@ -10,13 +10,11 @@ const Manageorder = () => {
   const [condition, setcondition] = useState(true);
 
   useEffect(() => {
-    const status = "pending";
-    axios
-      .get(`http://localhost:7000/getadmindata?status=${status}`)
-      .then((res) => setdata(res.data));
-  }, [user, condition]);
+    axios.get("http://localhost:7000/getadmindata").then((res) => {
+      setdata(res.data);
+    });
+  }, [condition]);
 
-  console.log(condition);
   const handelapprov = (id) => {
     const statusdata = "Approve";
     axios
@@ -29,6 +27,19 @@ const Manageorder = () => {
           });
         }
       });
+  };
+
+  const handeldelete = (id) => {
+    const procid = window.confirm("Are You Sure");
+    if (procid) {
+      axios
+        .delete(`http://localhost:7000/deleteaddmindata/${id}`)
+        .then((res) => {
+          if (res.data.acknowledged) {
+            setcondition(!condition);
+          }
+        });
+    }
   };
 
   return (
@@ -52,8 +63,13 @@ const Manageorder = () => {
               >
                 approve
               </button>
-              <button className="mana-cancele-button">cancele</button>
-              <button className="mana-delete-button">delete</button>
+
+              <button
+                onClick={() => handeldelete(DATA._id)}
+                className="mana-delete-button"
+              >
+                delete
+              </button>
             </div>
           </div>
         ))}
