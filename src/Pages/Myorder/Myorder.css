@@ -1,0 +1,114 @@
+.my-booking {
+  font-size: 34px;
+  color: #330101;
+  font-weight: 700;
+  line-height: 1.25em;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  margin-top: 50px;
+}
+.myorder-parent {
+  background-color: #c2a3d1;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.myorder-container {
+  background-color: #fff;
+  position: relative;
+  display: grid;
+  grid-template-columns: 300px 600px;
+  border-radius: 5px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.356);
+  width: 1000px;
+  margin-top: 50px;
+}
+.myorder-container img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px 0 0 5px;
+}
+
+.myorder-container .btn i {
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+
+.container__text {
+  padding: 40px 40px 0;
+}
+.container__text h1 {
+  color: #351897;
+  font-weight: 400;
+}
+.container__text .container__text__star span {
+  font-size: 0.8rem;
+  color: #ffa800;
+  margin: -5px 0 20px;
+}
+.container__text p {
+  font-size: 0.9rem;
+}
+.container__text .container__text__timing {
+  display: flex;
+  margin: 20px 0 10px;
+}
+.container__text .container__text__timing .container__text__timing_time {
+  margin-right: 40px;
+}
+.container__text .container__text__timing h2 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #818189;
+}
+.container__text .container__text__timing p {
+  color: #351897;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.myorder-delete {
+  background-color: #fc9400;
+  color: #fff;
+  padding: 17px 45px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.294);
+  border: none;
+  outline: none;
+}
+.myorder-cancel {
+  background-color: #fc9400;
+  color: #fff;
+  padding: 17px 45px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.294);
+  margin-left: 30px;
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .myorder-parent {
+    padding: 20px 20px;
+  }
+  .myorder-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .myorder-container img {
+    width: 100%;
+  }
+  .container__text {
+    padding: 40px 10px 30px 40px;
+  }
+}

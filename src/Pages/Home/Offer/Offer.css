@@ -1,0 +1,75 @@
+.offer-parent {
+  position: static;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 70px 0;
+  margin: 100px 0;
+  background-position: 50% 288px;
+}
+.chaking {
+  position: static;
+}
+.card-element {
+  display: flex;
+}
+.left-side {
+  width: 515px;
+  aspect-ratio: auto 581 / 378;
+  height: 100%;
+}
+.rigit-side {
+  margin-left: 70px;
+}
+.last-minut {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
+}
+.arial-vew {
+  color: #ffffff;
+  font-family: Playfair Display;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.25em;
+  font-size: 20px;
+}
+.offer-p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: Montserrat, sans-serif;
+}
+.offere-button {
+  color: #ff681a;
+  background-color: #ffffff;
+  border-radius: 0;
+  font-family: inherit;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 0;
+  transition: 0.5s;
+  padding: 16px 50px;
+  cursor: pointer;
+}
+.offere-button:hover {
+  color: white;
+  background-color: rgb(31, 30, 30);
+}
+
+@media only screen and (max-width: 600px) {
+  .left-side {
+    display: none;
+  }
+  .rigit-side {
+    margin-left: 25px;
+  }
+}

@@ -1,0 +1,51 @@
+.header-logo {
+  width: 90px;
+}
+.header-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px 10px 100px;
+}
+.header-text a {
+  padding: 0 13px;
+  color: #303030;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23px;
+  box-sizing: border-box;
+  letter-spacing: -0.005em;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  transition: 0.2s;
+}
+.header-text a:hover {
+  color: tomato;
+}
+.header-login {
+  border: none;
+  background: tomato;
+  color: white;
+  padding: 12px 33px;
+  border-radius: 3px;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.header-login:hover {
+  background: orangered;
+}
+.username {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-text a {
+    display: none;
+  }
+  .header-parent {
+    padding: 10px 25px;
+  }
+}

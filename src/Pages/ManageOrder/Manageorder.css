@@ -1,0 +1,72 @@
+.every-orderparent {
+  display: flex;
+  justify-content: center;
+  background: #e8ebf3;
+  height: 100vh;
+}
+.every-order {
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  counter-increment: gradient-counter;
+  margin-top: 2rem;
+  min-height: 3rem;
+  padding: 5rem 5rem 5rem 6rem;
+  position: relative;
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+    0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.text-aria {
+  display: flex;
+}
+.name {
+  font-size: 22px;
+}
+.price {
+  font-size: 23px;
+  margin-left: 100px;
+}
+.status {
+  font-size: 23px;
+  margin-left: 100px;
+}
+.approve-button {
+  padding: 9px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: rgb(40, 101, 139);
+  color: white;
+  font-size: 15px;
+  border-radius: 3px;
+}
+.mana-cancele-button {
+  padding: 9px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: rgb(153, 155, 48);
+  color: white;
+  font-size: 15px;
+  border-radius: 3px;
+}
+.mana-delete-button {
+  padding: 9px 20px;
+  border: none;
+  background-color: rgb(134, 50, 44);
+  color: white;
+  font-size: 15px;
+  border-radius: 3px;
+}
+.admin-header {
+  font-size: 34px;
+  color: #330101;
+  font-weight: 700;
+  line-height: 1.25em;
+  text-align: center;
+  font-family: Montserrat, sans-serif !important;
+  margin: 50px 0;
+}
