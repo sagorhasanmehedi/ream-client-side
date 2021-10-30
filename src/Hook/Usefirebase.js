@@ -10,7 +10,7 @@ import initalizefirebase from "../Firebase/Init.firebase";
 initalizefirebase();
 
 const Useirebase = () => {
-  const [user, setuser] = useState("");
+  const [user, setuser] = useState({});
   const auth = getAuth();
 
   // google signin

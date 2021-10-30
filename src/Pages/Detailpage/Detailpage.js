@@ -9,27 +9,30 @@ import "./Detail.css";
 
 const Detailpage = () => {
   const [data, setdata] = useState([]);
+
   const { id } = useParams();
   const { user } = UseAuth();
 
-  console.log(user);
-
-  const [name, setname] = useState("");
-  const [email, setemail] = useState("");
+  // const [name, setname] = useState("");
+  // const [email, setemail] = useState("");
   const [addres, setaddres] = useState("");
 
-  const handelname = (e) => {
-    setname(e.target.value);
-  };
-  const handelemail = (e) => {
-    setemail(e.target.value);
-  };
+  // const handelname = () => {
+  //   setname(user.displayName);
+  // };
+  // const handelemail = () => {
+  //   setemail(user.email);
+  // };
   const handeladdres = (e) => {
     setaddres(e.target.value);
   };
 
   const handelsubmit = () => {
-    const userinformation = { name, email, addres };
+    const userinformation = {
+      name: user.displayName,
+      email: user.email,
+      addres,
+    };
     data.email = user.email;
     data.status = "pending";
     data.userINFO = userinformation;
@@ -44,7 +47,9 @@ const Detailpage = () => {
         }
       });
 
-    data.email = document.getElementById("namefild").value = "";
+    console.log(data);
+
+    document.getElementById("namefild").value = "";
     document.getElementById("emailfild").value = "";
     document.getElementById("addresfild").value = "";
   };
@@ -65,23 +70,13 @@ const Detailpage = () => {
         <div class="container-text">
           <h2 className="order-heading">{data.name}</h2>
           <p>{data.des}</p>
-          <input
-            id="namefild"
-            onChange={handelname}
-            type="text"
-            placeholder=" Name"
-          />
-          <input
-            id="emailfild"
-            onChange={handelemail}
-            type="email"
-            placeholder="Email "
-          />
+          <input value={user.displayName || ""} id="namefild" type="text" />
+          <input id="emailfild" type="email" value={user.email || ""} />
           <input
             id="addresfild"
             onChange={handeladdres}
             type="text"
-            placeholder=" Address"
+            value=" Address..."
           />
           <button onClick={handelsubmit} type="submit">
             {" "}

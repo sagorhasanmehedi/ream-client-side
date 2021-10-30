@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyCTOjollKwO4X6hFWWMEcxKtCclRQB1dWo",
-  authDomain: "assignment-11-425c0.firebaseapp.com",
-  projectId: "assignment-11-425c0",
-  storageBucket: "assignment-11-425c0.appspot.com",
-  messagingSenderId: "653599774806",
-  appId: "1:653599774806:web:88cbf4b2ad27048fa503f7",
+  apiKey: "AIzaSyDKgGvIpEiT37Xh-ssZv5-i-vVK3TVsYb8",
+  authDomain: "simlpe-firbase-authintication.firebaseapp.com",
+  projectId: "simlpe-firbase-authintication",
+  storageBucket: "simlpe-firbase-authintication.appspot.com",
+  messagingSenderId: "447456823759",
+  appId: "1:447456823759:web:b90e1fc851c03b97502aba",
 };
 
 export default firebaseConfig;

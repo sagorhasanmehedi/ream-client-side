@@ -1,58 +1,104 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import useAuth from "../../Hook/UseAuth";
 import "./Addnewservices.css";
 
 const Addnew = () => {
+  const { user } = useAuth();
+  const [name, setname] = useState("");
+  const [img, setimg] = useState("");
+  const [des, setdes] = useState("");
+
+  // hanndel name
+  const handelname = (e) => {
+    setname(e.target.value);
+  };
+  // hanndel images
+  const handelimages = (e) => {
+    setimg(e.target.value);
+  };
+  // hanndel discription
+  const handeldiscription = (e) => {
+    setdes(e.target.value);
+  };
+
+  //  handel submit
+  const handelsubmit = (event) => {
+    const adduser = user.email;
+    const data = { name, img, des, adduser };
+
+    axios.post("http://localhost:7000/addnew", data).then((res) => {
+      if (res.data.acknowledged) {
+        toast.success("Add Successful !", {
+          position: toast.POSITION.TOP_CENTER,
+        });
+      }
+    });
+
+    document.getElementById("name").value = "";
+    document.getElementById("images").value = "";
+    document.getElementById("discription").value = "";
+    event.preventDefault();
+  };
+
   return (
     <div className="addnew-parent">
-      <div class="form">
-        <div class="form-toggle"></div>
-        <div class="form-panel one">
-          <div class="form-header">
+      <ToastContainer />
+      <div className="form">
+        <div className="form-toggle"></div>
+        <div className="form-panel one">
+          <div className="form-header">
             <h1>ADD NEW Destinations</h1>
           </div>
-          <div class="form-content">
+          <div className="form-content">
             <form>
-              <div class="form-group">
-                <label for="username">Destinations name</label>
+              <div className="form-group">
+                <label for="name">Destinations Name</label>
                 <input
-                  id="username"
+                  onChange={handelname}
+                  id="name"
                   type="text"
-                  name="username"
+                  name="name"
                   required="required"
                 />
               </div>
-              <div class="form-group">
-                <label for="password">Images</label>
+              <div className="form-group">
+                <label for="images">Images</label>
                 <input
-                  id="password"
-                  type="password"
-                  name="password"
+                  id="images"
+                  type="text"
+                  name="images"
                   required="required"
+                  onChange={handelimages}
                 />
               </div>
-              <div class="form-group">
-                <label for="password">Discription</label>
+              <div className="form-group">
+                <label for="discription">Discription</label>
                 <input
-                  id="password"
-                  type="password"
-                  name="password"
+                  id="discription"
+                  type="text"
+                  name="discription"
                   required="required"
+                  onChange={handeldiscription}
                 />
               </div>
 
-              <div class="form-group">
-                <button type="submit">Submit</button>
+              <div className="form-group">
+                <button onClick={handelsubmit} type="submit">
+                  Submit
+                </button>
               </div>
             </form>
           </div>
         </div>
-        <div class="form-panel two">
-          <div class="form-header">
+        <div className="form-panel two">
+          <div className="form-header">
             <h1>Register Account</h1>
           </div>
-          <div class="form-content">
+          <div className="form-content">
             <form>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="username">Username</label>
                 <input
                   id="username"
@@ -61,7 +107,7 @@ const Addnew = () => {
                   required="required"
                 />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="password">Password</label>
                 <input
                   id="password"
@@ -70,7 +116,7 @@ const Addnew = () => {
                   required="required"
                 />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="cpassword">Confirm Password</label>
                 <input
                   id="cpassword"
@@ -79,7 +125,7 @@ const Addnew = () => {
                   required="required"
                 />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="email">Email Address</label>
                 <input
                   id="email"
@@ -88,14 +134,14 @@ const Addnew = () => {
                   required="required"
                 />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <button type="submit">Register</button>
               </div>
             </form>
           </div>
         </div>
       </div>
-      <div class="pen-footer"></div>
+      <div className="pen-footer"></div>
     </div>
   );
 };

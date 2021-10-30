@@ -19,9 +19,10 @@ const Footer = () => {
               <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
 
               <p class="mb10">
-                Lorem Ipsum is simply dummy text of the and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since 1500s
+                The Tourism Authority of Thailand (TAT) has quarantine-free
+                reopening of Thailand to fully <br /> vaccinated foreign
+                visitors, including returning <br /> and foreign residents, from
+                the approved list
               </p>
               <p>
                 <i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35{" "}
@@ -95,26 +96,27 @@ const Footer = () => {
                     <i class="fab fa-twitter fleft padding-right"></i>{" "}
                   </a>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing...
-                    <a href="#">https://www.lipsum.com/</a>
+                    The Tourism Authority of Thailand (TAT) has confirmed ...
+                    <a href="#">https://www.twitter.com/</a>
                   </p>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fab fa-twitter fleft padding-right"></i>{" "}
+                    <i class="fab fa-facebook-f fleft padding-right"></i>{" "}
                   </a>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing...
-                    <a href="#">https://www.lipsum.com/</a>
+                    TravelDailyJobs.com online career platform hospitality ...
+                    <a href="#">https://www.facebook.com/</a>
                   </p>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fab fa-twitter fleft padding-right"></i>{" "}
+                    <i class="fab fa-youtube fleft padding-right"></i>{" "}
                   </a>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing...
-                    <a href="#">https://www.lipsum.com/</a>
+                    Profile now discover travel and hospitality jobs
+                    worldwide...
+                    <a href="#">https://www.youtube.com/</a>
                   </p>
                 </li>
               </ul>

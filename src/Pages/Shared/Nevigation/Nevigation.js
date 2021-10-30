@@ -28,15 +28,21 @@ const Nevigation = () => {
           <NavLink to="/">
             <a href="">Home</a>
           </NavLink>
-          <NavLink to="/manageorder">
-            <a>Manage Order</a>
-          </NavLink>
-          <NavLink to="/addnew">
-            <a href="">Add New</a>
-          </NavLink>
-          <NavLink to="/myorder">
-            <a href="">My Order</a>
-          </NavLink>
+          {user.email && (
+            <NavLink to="/manageorder">
+              <a>Manage Order</a>
+            </NavLink>
+          )}
+          {user.email && (
+            <NavLink to="/addnew">
+              <a href="">Add New</a>
+            </NavLink>
+          )}
+          {user.email && (
+            <NavLink to="/myorder">
+              <a href="">My Order</a>
+            </NavLink>
+          )}
 
           {user.email ? (
             <button onClick={signoutbutton} className="header-login">
@@ -44,7 +50,7 @@ const Nevigation = () => {
             </button>
           ) : (
             <NavLink to="/login">
-              <button className="header-login">Sigm In</button>
+              <button className="header-login">Sign In</button>
             </NavLink>
           )}
         </div>
