@@ -11,7 +11,7 @@
 <li>Using React Bootstarp</li>
 <li>Database Mongodb</li>
 <li>Server Deploy in Heroku</li>
-<li>Websit link https://assignment-11-clint-side.netlify.app/</li>
+<li>https://assignment-11-clint-side.netlify.app/</li>
 </ul>
 
 #### About This Projects
