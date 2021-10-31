@@ -39,3 +39,11 @@
 a:hover {
   text-decoration: underline;
 }
+@media only screen and (max-width: 600px) {
+  .login-form {
+    width: 100%;
+  }
+  .login-parent {
+    padding: 50px 20px;
+  }
+}

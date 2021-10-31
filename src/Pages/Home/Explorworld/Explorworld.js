@@ -18,13 +18,13 @@ const Explorworld = () => {
           <div className="text-section">
             <h2 className="about-agency">About Our Agency</h2>
             <h2 className="about-caption">
-              Aerial view of Cape Town with Cape Town Stadium
+              The world’s leading online travel and related services.
             </h2>
             <p className="about-p">
-              Lorem ipsum dolor sit amet. Lorem Ipsn gravida. Pro ain gravida
-              nibh vel velit <br /> an auctor aliqueenean ollicitudin ain
-              gravida nibh vel version an ipsum. Lorem <br /> ipsim dolor sit
-              amet auctor aliqueenean.
+              ROAM Holdings is the world’s leading provider of online travel and
+              services, <br /> provided to consumers and local partners in more
+              in than 220 countries and <br /> territories through six primary
+              consumer-facing brands: Roam.com, Priceline <br />
             </p>
             <button className="about-button">BUY THEME</button>
           </div>

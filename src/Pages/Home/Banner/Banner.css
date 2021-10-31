@@ -17,3 +17,9 @@
   border-width: 0 px;
   padding-top: 250px;
 }
+
+@media only screen and (max-width: 600px) {
+  .banner-heading {
+    padding-top: 120px;
+  }
+}

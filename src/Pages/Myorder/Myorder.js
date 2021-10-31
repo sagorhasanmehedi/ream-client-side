@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import useAuth from "../../Hook/UseAuth";
 import "./Myorder.css";
+import { Helmet } from "react-helmet";
 
 const Myorder = () => {
   const [data, setdata] = useState([]);
@@ -37,6 +38,10 @@ const Myorder = () => {
 
   return (
     <div className="myorder-parent">
+      <Helmet>
+        <title>ROAM | MY ORDER</title>
+      </Helmet>
+
       <ToastContainer />
       <div className="">
         <h1 className="my-booking">MY BOOKING</h1>

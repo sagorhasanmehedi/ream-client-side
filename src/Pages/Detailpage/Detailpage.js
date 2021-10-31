@@ -13,16 +13,8 @@ const Detailpage = () => {
   const { id } = useParams();
   const { user } = UseAuth();
 
-  // const [name, setname] = useState("");
-  // const [email, setemail] = useState("");
   const [addres, setaddres] = useState("");
 
-  // const handelname = () => {
-  //   setname(user.displayName);
-  // };
-  // const handelemail = () => {
-  //   setemail(user.email);
-  // };
   const handeladdres = (e) => {
     setaddres(e.target.value);
   };

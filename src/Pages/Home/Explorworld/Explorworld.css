@@ -56,3 +56,20 @@
 .text-section {
   margin-left: 50px;
 }
+
+@media only screen and (max-width: 600px) {
+  .img-section img {
+    width: 100%;
+  }
+  .img-section {
+    padding: 0 10px;
+  }
+  .explor {
+    margin: 70px 0;
+    flex-direction: column;
+  }
+  .text-section {
+    margin: 0;
+    padding: 40px;
+  }
+}

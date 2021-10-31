@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import useAuth from "../../Hook/UseAuth";
 import "./Manageorder.css";
+import { Helmet } from "react-helmet";
 
 const Manageorder = () => {
   const [data, setdata] = useState([]);
@@ -44,6 +45,10 @@ const Manageorder = () => {
 
   return (
     <div className="every-orderparent ">
+      <Helmet>
+        <title>ROAM | MANAGE ORDER</title>
+      </Helmet>
+
       <ToastContainer />
       <div className="">
         <h3 className="admin-header">ADMIN DAILY DASHBOARD</h3>

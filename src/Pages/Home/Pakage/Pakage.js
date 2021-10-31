@@ -23,9 +23,10 @@ const Pakage = () => {
           <h5 className="modern">Modern & Beautiful</h5>
           <h3 className="our-adven">Our Most Popular Adventures</h3>
           <p className="card-p">
-            Lorem ipsum dolor sit amet, ad mea porro integre, feugiat
-            efficiantur vis eu, te sit illum dolorum. Fugit <br /> scriptorem
-            mea at. Ad eros invenire incorrupte nam, vim in mazim scripserit.
+            Why the Grand Canyon? To see the great gorge from a completely
+            different – and rare – angle. Looking down <br /> on the squiggle of
+            the Colorado River from a mile up on the rocky rim, it seems
+            impossible
           </p>
         </div>
         <div class="grid">

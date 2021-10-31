@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import useAuth from "../../Hook/UseAuth";
 import "./Addnewservices.css";
+import { Helmet } from "react-helmet";
 
 const Addnew = () => {
   const { user } = useAuth();
@@ -44,6 +45,10 @@ const Addnew = () => {
 
   return (
     <div className="addnew-parent">
+      <Helmet>
+        <title>ROAM | ADD NEW</title>
+      </Helmet>
+
       <ToastContainer />
       <div className="form">
         <div className="form-toggle"></div>

@@ -25,10 +25,11 @@ const Offer = () => {
               Aerial view of Cape Town with Cape Town Stadium
             </h5>
             <p className="offer-p">
-              Lorem ipsum dolor sit amet. Lorem Ipsn gravida. Pro ain gravida
-              nibh vel velit an auctor <br /> aliqueenean ollicitudin ain
-              gravida nibh vel version an ipsum. Lorem ipsim dolor sit <br />{" "}
-              amet auctor aliqueenean ollicitudin.
+              This ROAM Holdings 2020 Sustainability Report provides an update
+              <br /> on the progress of the company’s sustainability and
+              corporate social
+              <br /> responsibility activities from the 2020 fiscal year, unless
+              specified
             </p>
 
             <button className="offere-button">View More</button>
