@@ -29,13 +29,15 @@ const Addnew = () => {
     const adduser = user.email;
     const data = { name, img, des, adduser };
 
-    axios.post("http://localhost:7000/addnew", data).then((res) => {
-      if (res.data.acknowledged) {
-        toast.success("Add Successful !", {
-          position: toast.POSITION.TOP_CENTER,
-        });
-      }
-    });
+    axios
+      .post("https://stormy-river-96202.herokuapp.com/addnew", data)
+      .then((res) => {
+        if (res.data.acknowledged) {
+          toast.success("Add Successful !", {
+            position: toast.POSITION.TOP_CENTER,
+          });
+        }
+      });
 
     document.getElementById("name").value = "";
     document.getElementById("images").value = "";

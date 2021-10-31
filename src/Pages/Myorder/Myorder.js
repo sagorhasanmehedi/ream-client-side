@@ -12,7 +12,9 @@ const Myorder = () => {
 
   useEffect(() => {
     axios
-      .post(`http://localhost:7000/findbooking?email=${user.email}`)
+      .post(
+        `https://stormy-river-96202.herokuapp.com/findbooking?email=${user.email}`
+      )
       .then((res) => setdata(res.data));
   }, [condition]);
 
@@ -20,20 +22,17 @@ const Myorder = () => {
   const orderdelete = (id) => {
     const provider = window.confirm("Are You Sure");
     if (provider) {
-      axios.delete(`http://localhost:7000/deletebooking/${id}`).then((res) => {
-        if (res.data.deletedCount > 0) {
-          toast.success("Order Placed !", {
-            position: toast.POSITION.TOP_CENTER,
-          });
-          setcondition(!condition);
-        }
-      });
+      axios
+        .delete(`https://stormy-river-96202.herokuapp.com/deletebooking/${id}`)
+        .then((res) => {
+          if (res.data.deletedCount > 0) {
+            toast.success("Order Placed !", {
+              position: toast.POSITION.TOP_CENTER,
+            });
+            setcondition(!condition);
+          }
+        });
     }
-  };
-
-  // cancale order
-  const handelcancel = (id) => {
-    console.log(id);
   };
 
   return (
@@ -73,7 +72,7 @@ const Myorder = () => {
                 </div>
               </div>
               <button
-                onClick={() => handelcancel(DATA._id)}
+                onClick={() => orderdelete(DATA._id)}
                 className="myorder-delete"
               >
                 cancel

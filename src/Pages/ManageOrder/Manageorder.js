@@ -11,15 +11,19 @@ const Manageorder = () => {
   const [condition, setcondition] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:7000/getadmindata").then((res) => {
-      setdata(res.data);
-    });
+    axios
+      .get("https://stormy-river-96202.herokuapp.com/getadmindata")
+      .then((res) => {
+        setdata(res.data);
+      });
   }, [condition]);
 
   const handelapprov = (id) => {
     const statusdata = "Approve";
     axios
-      .post(`http://localhost:7000/statusupdate/${id}`, { statusdata })
+      .post(`https://stormy-river-96202.herokuapp.com/statusupdate/${id}`, {
+        statusdata,
+      })
       .then((res) => {
         setcondition(!condition);
         if (res.data.modifiedCount > 0) {
@@ -34,7 +38,9 @@ const Manageorder = () => {
     const procid = window.confirm("Are You Sure");
     if (procid) {
       axios
-        .delete(`http://localhost:7000/deleteaddmindata/${id}`)
+        .delete(
+          `https://stormy-river-96202.herokuapp.com/deleteaddmindata/${id}`
+        )
         .then((res) => {
           if (res.data.acknowledged) {
             setcondition(!condition);

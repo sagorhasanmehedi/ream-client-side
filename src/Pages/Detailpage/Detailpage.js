@@ -29,13 +29,15 @@ const Detailpage = () => {
     data.status = "pending";
     data.userINFO = userinformation;
 
-    axios.put(`http://localhost:7000/confirmbook`, data).then((res) => {
-      if (res.data.acknowledged) {
-        toast.success("Order Placed !", {
-          position: toast.POSITION.TOP_CENTER,
-        });
-      }
-    });
+    axios
+      .put(`https://stormy-river-96202.herokuapp.com/confirmbook`, data)
+      .then((res) => {
+        if (res.data.acknowledged) {
+          toast.success("Order Placed !", {
+            position: toast.POSITION.TOP_CENTER,
+          });
+        }
+      });
 
     document.getElementById("namefild").value = "";
     document.getElementById("emailfild").value = "";
