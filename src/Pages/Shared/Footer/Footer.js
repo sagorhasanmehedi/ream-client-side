@@ -4,14 +4,6 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div>
-      <img
-        className="footer-img"
-        style={{ height: "100%", width: "100%" }}
-        src={
-          "https://roam.qodeinteractive.com/wp-content/uploads/2017/08/background-image.png"
-        }
-        alt=""
-      />
       <footer class="footer">
         <div class="container bottom_border">
           <div class="row">

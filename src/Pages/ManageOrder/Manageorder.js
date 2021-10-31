@@ -57,7 +57,7 @@ const Manageorder = () => {
 
       <ToastContainer />
       <div className="">
-        <h3 className="admin-header">ADMIN DAILY DASHBOARD</h3>
+        <h3 className="admin-header">ADMIN DASHBOARD</h3>
         {data.map((DATA) => (
           <div key={DATA.name} className="every-order">
             <div className="text-aria">

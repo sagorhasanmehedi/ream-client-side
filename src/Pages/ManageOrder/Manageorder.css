@@ -1,9 +1,14 @@
 .every-orderparent {
   display: flex;
   justify-content: center;
-  background: #e8ebf3;
+  background: linear-gradient(
+    45deg,
+    rgba(66, 183, 245, 0.8) 0%,
+    rgba(66, 245, 189, 0.4) 100%
+  );
   height: 100vh;
 }
+
 .every-order {
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
   counter-increment: gradient-counter;
@@ -55,12 +60,12 @@
 }
 .admin-header {
   font-size: 34px;
-  color: #330101;
+  color: #440101;
   font-weight: 700;
   line-height: 1.25em;
   text-align: center;
   font-family: Montserrat, sans-serif !important;
-  margin: 50px 0;
+  margin: 100px 0 50px 0;
 }
 
 @media only screen and (max-width: 600px) {
