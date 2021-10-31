@@ -26,7 +26,7 @@ const Myorder = () => {
         .delete(`https://stormy-river-96202.herokuapp.com/deletebooking/${id}`)
         .then((res) => {
           if (res.data.deletedCount > 0) {
-            toast.success("Order Placed !", {
+            toast.success("Delete !", {
               position: toast.POSITION.TOP_CENTER,
             });
             setcondition(!condition);
