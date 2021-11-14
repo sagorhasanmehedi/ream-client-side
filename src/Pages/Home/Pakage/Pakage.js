@@ -25,7 +25,6 @@ const Pakage = () => {
     );
   }
 
-  console.log(data);
   return (
     <div className="card-img">
       <div className="card-parent">
@@ -52,7 +51,7 @@ const Pakage = () => {
                       onClick={() => godetail(DATA._id)}
                       class="card__btn"
                     >
-                      Explore <span>&rarr;</span>
+                      Book Now <span>&rarr;</span>
                     </button>
                   </div>
                 </div>

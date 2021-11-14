@@ -6,6 +6,8 @@ import "./Nevagation.css";
 const Nevigation = () => {
   const { user, signout } = useAuth();
 
+  console.log(user.email);
+
   const signoutbutton = () => {
     signout();
   };
