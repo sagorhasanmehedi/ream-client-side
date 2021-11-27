@@ -6,6 +6,3 @@ const useAuth = () => {
 };
 
 export default useAuth;
-
-
-hellow world
